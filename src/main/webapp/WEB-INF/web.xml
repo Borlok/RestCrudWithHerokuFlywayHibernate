@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>com.borlok.servlet.CustomerServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AccountServlet</servlet-name>
+    <servlet-class>com.borlok.servlet.AccountServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SpecialtyServlet</servlet-name>
+    <servlet-class>com.borlok.servlet.SpecialtyServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ErrorServlet</servlet-name>
+    <servlet-class>com.borlok.servlet.ErrorServlet</servlet-class>
+  </servlet>
+
+<!--  //////////////////////////////////////////////////////////////////////-->
+
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/customers</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/customers/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AccountServlet</servlet-name>
+    <url-pattern>/accounts</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AccountServlet</servlet-name>
+    <url-pattern>/accounts/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SpecialtyServlet</servlet-name>
+    <url-pattern>/specialties</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SpecialtyServlet</servlet-name>
+    <url-pattern>/specialties/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ErrorServlet</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error</location>
+  </error-page>
+
+</web-app>
