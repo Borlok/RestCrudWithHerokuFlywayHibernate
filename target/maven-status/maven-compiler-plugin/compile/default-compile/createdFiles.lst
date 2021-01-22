@@ -7,6 +7,7 @@ com/borlok/controller/AccountController.class
 com/borlok/repository/SpecialtyRepository.class
 com/borlok/repository/CustomerRepository.class
 com/borlok/model/AccountStatus.class
+com/borlok/servlet/util/ServletsUtils.class
 com/borlok/servlet/ErrorServlet.class
 com/borlok/model/Specialty.class
 com/borlok/servlet/AccountServlet.class
@@ -14,7 +15,6 @@ com/borlok/controller/SpecialtyController.class
 com/borlok/repository/hibernate/JpaSpecialtyRepository.class
 com/borlok/repository/hibernate/JpaCustomerRepository.class
 com/borlok/model/Customer.class
-com/borlok/servlet/util/JsonConverter.class
 com/borlok/service/CustomerService.class
 com/borlok/repository/AccountRepository.class
 com/borlok/controller/CustomerController.class
