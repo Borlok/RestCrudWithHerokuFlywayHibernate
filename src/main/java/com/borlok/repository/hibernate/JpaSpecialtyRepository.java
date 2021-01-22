@@ -53,7 +53,7 @@ public class JpaSpecialtyRepository implements SpecialtyRepository {
         Session session = JpaUtil.getSession();
 
         List<Specialty> specialties = session.createQuery("from Specialty").list();
-
+        specialties.size();
         session.close();
         return specialties;
     }
