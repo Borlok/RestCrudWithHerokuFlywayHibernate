@@ -1,4 +1,4 @@
-REST API, которое взаимодействует с БД (Hibernate).
+REST API, которое взаимодействует с БД (Hibernate). [![Build Status](https://travis-ci.com/Borlok/RestCrudWithHerokuFlywayHibernate.svg?branch=master)](https://travis-ci.com/Borlok/RestCrudWithHerokuFlywayHibernate)
 
 Сущности:
 
