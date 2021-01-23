@@ -1,0 +1,8 @@
+language: java
+sudo: required
+services:
+  - postgresql
+before_install:
+  - psql -c "CREATE DATABASE d3050ujlnth6v5;" -U postgres
+  - psql -c "CREATE USER jkezcxqippcdiz WITH PASSWORD '55b8084d5b9bb41f731122f6077e82a9afa9c7daf18f47e505449e7ef6f74d61';" -U postgres
+  - psql -c "GRANT ALL PRIVILEGES ON DATABASE d3050ujlnth6v5 to jkezcxqippcdiz;" -U postgres
