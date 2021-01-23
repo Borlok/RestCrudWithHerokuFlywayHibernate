@@ -6,7 +6,7 @@
 
     <groupId>com.company</groupId>
     <artifactId>RestCrud</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>war</packaging>
 
     <name>RestCrud Maven Webapp</name>
@@ -122,9 +122,9 @@
                 </executions>
                 <configuration>
                     <driver>org.postgresql.Driver</driver>
-                    <url>jdbc:postgresql://ec2-18-205-122-145.compute-1.amazonaws.com:5432/d28gb91934qf6e</url>
-                    <user>jorxqbzeeginuo</user>
-                    <password>38edf831025c79eeb64059d3f03fe30ac4940629304c20c3e33ebb47bc38bc5d</password>
+                    <url>jdbc:postgresql://ec2-54-235-116-235.compute-1.amazonaws.com:5432/d3050ujlnth6v5</url>
+                    <user>jkezcxqippcdiz</user>
+                    <password>55b8084d5b9bb41f731122f6077e82a9afa9c7daf18f47e505449e7ef6f74d61</password>
                 </configuration>
             </plugin>
 

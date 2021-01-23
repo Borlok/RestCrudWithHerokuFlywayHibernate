@@ -17,8 +17,11 @@ public class CustomerSerializer implements JsonSerializer<Customer> {
             specialties.add(s.getId());
         }
         customer.add("Specialties",specialties);
-        JsonPrimitive account = new JsonPrimitive(src.getAccount().getId());
-        customer.add("AccountId", account);
+        JsonObject account = new JsonObject();
+        account.addProperty("id", src.getAccount().getId());
+        account.addProperty("name", src.getAccount().getName());
+        account.addProperty("status", src.getAccount().getStatus().ordinal());
+        customer.add("Account", account);
 
         return customer;
     }
