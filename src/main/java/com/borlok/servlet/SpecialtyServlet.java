@@ -20,28 +20,28 @@ public class SpecialtyServlet extends HttpServlet {
         Gson gson = new Gson();
         String jsonObject = "";
 
-        String [] splitId = ServletsUtils.getSpitedRequestUri(request);
+        String [] splitId = ServletsUtils.getSplicedUriFromRequest(request);
         if (splitId.length > 1) {
-            jsonObject = ServletsUtils.getJsonFormatFromObject(specialtyController.getById(Integer.parseInt(splitId[1])));
+            jsonObject = ServletsUtils.getJsonFromObject(specialtyController.getById(Integer.parseInt(splitId[1])));
         } else {
-            jsonObject = ServletsUtils.getJsonFormatFromObject(specialtyController.getAll());
+            jsonObject = ServletsUtils.getJsonFromObject(specialtyController.getAll());
         }
         response.getWriter().println(jsonObject);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Specialty specialty = (Specialty) ServletsUtils.getObjectFromRequest(request, new Specialty());
+        Specialty specialty = (Specialty) ServletsUtils.getObjectFromRequestJson(request, new Specialty());
         specialtyController.create(specialty);
     }
 
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String [] splitId = ServletsUtils.getSpitedRequestUri(request);
-        Specialty specialty = (Specialty) ServletsUtils.getObjectFromRequest(request, new Specialty());
+        String [] splitId = ServletsUtils.getSplicedUriFromRequest(request);
+        Specialty specialty = (Specialty) ServletsUtils.getObjectFromRequestJson(request, new Specialty());
         specialty.setId(Integer.parseInt(splitId[1]));
         specialtyController.update(specialty);
     }
 
     protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        specialtyController.delete(Integer.valueOf(ServletsUtils.getSpitedRequestUri(request)[1]));
+        specialtyController.delete(Integer.valueOf(ServletsUtils.getSplicedUriFromRequest(request)[1]));
     }
 }

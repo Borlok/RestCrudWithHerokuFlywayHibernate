@@ -16,6 +16,7 @@
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/controller/SpecialtyController.java
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/repository/AccountRepository.java
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/servlet/ErrorServlet.java
+/home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/servlet/Main.java
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/model/Specialty.java
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/servlet/SpecialtyServlet.java
 /home/yurii/IdeaProjects/RestCrud/src/main/java/com/borlok/model/Customer.java
