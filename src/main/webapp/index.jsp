@@ -4,6 +4,6 @@
     <meta charset="UTF-8" lang="ru">
 </head>
 <body>
-REST API, которое взаимодействует с БД (Hibernate).
+REST API with DB (Hibernate).
 </body>
 </html>
